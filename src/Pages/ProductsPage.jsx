@@ -54,7 +54,7 @@ function ProductsPage() {
       />
       <div className={styles.container}>
         <div className={styles.products}>
-          {isLoading && <Loader />}
+          {isLoading && <div>Loading....</div>}
           {displayed.map((item) => (
             <Card data={item} key={item.id} />
           ))}
