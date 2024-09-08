@@ -7,7 +7,8 @@ import { SiOpenproject } from "react-icons/si";
 import { IoMdPricetag } from "react-icons/io";
 import { FiArrowLeft } from "react-icons/fi";
 import styles from "./DetailsPage.module.css";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import ProductsProvider from "../context/ProductsContext";
 
 function DetailsPage() {
   const { id } = useParams();
@@ -17,9 +18,9 @@ function DetailsPage() {
 
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchProducts());
-  }, []);
+  // useEffect(() => {
+  //   dispatch(ProductsProvider);
+  // }, []);
 
   if (!res) return <Loader />;
 
