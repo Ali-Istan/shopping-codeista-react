@@ -15,7 +15,7 @@ import Sidebar from "../Components/Sidebar";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../features/products/ProductSlice";
 
-import Loader from "../components/Loader";
+// import Loader from "../components/Loader";
 
 function ProductsPage() {
   const [displayed, setDisplaayed] = useState([]);
