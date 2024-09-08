@@ -1,7 +1,7 @@
 import React from "react";
 import { createQueryObject } from "../helpers/helpers";
 import { FaListUl } from "react-icons/fa";
-import styles from "./Sidebar.module.css";
+import styles from "./sidebar.module.css";
 import { category } from "../Constants/list";
 
 function Sidebar({ quary, setQuary }) {
