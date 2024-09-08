@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 // import { useProducts } from "../context/ProductsContext";
 import styles from "./ProductsPage.module.css";
 import Card from "../Components/Card";
-import Loader from "../components/Loader";
 
 import {
   createQueryObject,
@@ -15,6 +14,7 @@ import SearchBox from "../Components/SearchBox";
 import Sidebar from "../Components/Sidebar";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../features/products/ProductSlice";
+import Loader from "../components/Loader";
 
 function ProductsPage() {
   const [displayed, setDisplaayed] = useState([]);
