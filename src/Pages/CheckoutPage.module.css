@@ -1,0 +1,33 @@
+.empty {
+    display: flex;
+
+}
+
+.empty h3 {
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fe5d42;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+    min-height: 1000px;
+    
+}
+
+.basket {
+    width: 100%;
+}
